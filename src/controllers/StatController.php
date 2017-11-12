@@ -16,7 +16,7 @@ class StatController extends Controller
     public function actionIndex($condition = [], $days_ago = null, $stat_ip = false)
     {
         // регистрируем ресурсы:
-        \Klisl\Statistics\StatAssetsBundle::register($this->view);
+        \Pkqname\Notes\StatAssetsBundle::register($this->view);
 
 
         return $this->render('index', []);
