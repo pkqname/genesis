@@ -3,6 +3,7 @@
     "description": "description text",
     "type": "project",
     "license": "proprietary",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Denis Marchuk",
