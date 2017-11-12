@@ -1,22 +1,24 @@
 {
-    "name": "pkqname/genesis",
-    "description": "description text",
-    "type": "project",
-    "license": "proprietary",
-    "minimum-stability": "stable",
+  "name": "pkqname/genesis",
+    "description": "Notes for Genesis",
+  "type": "yii2-extension",
+    "license": "MIT",
     "authors": [
         {
             "name": "Denis Marchuk",
             "email": "fldenismarchuk@gmail.com"
         }
     ],
-    "require": {
-        "php": ">=5.4.0"
+	"minimum-stability": "stable",
+	"require": {
+        "yiisoft/yii2": "~2.0.0"
     },
-    "require-dev": {
-        "phpunit/phpunit": "4.8.9"
+    "extra": {
+        "bootstrap": "Pkqname\\Notes\\Bootstrap"
     },
-    "autoload": {
-        "classmap": ["src"]
+  "autoload": {
+        "psr-4": {
+			"Pkqname\\Notes\\": "src"
+        }
     }
 }
