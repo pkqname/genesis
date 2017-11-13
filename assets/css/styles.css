@@ -1,3 +1,12 @@
 .note {
     border:1px solid red;
 }
+
+.added {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.added:hover {
+    text-decoration:underline;
+}
