@@ -15,16 +15,13 @@ class Bootstrap implements BootstrapInterface{
         //Правила маршрутизации
         $app->getUrlManager()->addRules([
             'notes' => 'notes/stat/index',
+            'notes/<id:\d+>' => 'notes/stat/single',
+            'notes/edit/<id:\d+>' => 'notes/stat/edit',
+            'notes/delete/<id:\d+>' => 'notes/stat/delete',
+            'notes/added' => 'notes/stat/added',
         ], false);
 
-        /*
-         * Регистрация модуля в приложении
-         * (вместо указания в файле frontend/config/main.php
-         *  'modules' => [
-         *      'statistics' => 'Klisl\Statistics\Module'
-         *  ],
-         */
-         $app->setModule('statistics', 'Pkqname\Notes\Module');
+         $app->setModule('notes', 'Pkqname\Notes\Module');
 
 
     }

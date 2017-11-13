@@ -10,6 +10,6 @@ class StatAssetsBundle extends AssetBundle
     public $sourcePath = '@vendor/pkqname/genesis/assets';
 
     public $css = [
-        'css/style.css'
+        'css/styles.css'
     ];
 }
