@@ -20,7 +20,7 @@ class StatController extends Controller
         // регистрируем ресурсы:
         StatAssetsBundle::register($this->view);
 
-        $notes = Notes::find()->all();
+        $notes = Notes::find()->orderBy(['id' => SORT_DESC])->all();
 
 
         return $this->render('index', compact('notes'));
