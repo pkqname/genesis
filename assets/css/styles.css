@@ -18,7 +18,7 @@ h1 {
 }
 
 .added:hover {
-    text-decoration:underline;
+    text-decoration: none;
 }
 
 .delete {
@@ -27,7 +27,7 @@ h1 {
 }
 
 .delete:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .edit {
@@ -36,7 +36,7 @@ h1 {
 }
 
 .edit:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .view {
@@ -45,7 +45,7 @@ h1 {
 }
 
 .view:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .text {
