@@ -1,12 +1,15 @@
 <div class="container">
-     <a href="notes/added">Добавить заметку</a>
-<?php foreach($notes as $note) { ?>
-    <div class="note">
-        <h3>Заметка №<?=$note->id?></h3>
-        <p><?=$note->text?></p>
-        <p>Дата создания <?=$note->date?></p>
-        <p>Дата последнего изменения <?=$note->date_change?></p>
-        <a href="notes/<?=$note->id?>">Просмотреть</a>
+    <h1>Список заметок</h1>
+     <a class="added btn-success" href="notes/added">Добавить заметку</a>
+    <div class="notes">
+    <?php foreach($notes as $note) { ?>
+        <div class="note">
+            <h3>Заметка №<?=$note->id?></h3>
+            <p><?=$note->text?></p>
+            <span>Дата создания <?=$note->date?></span>
+            <span style="float:right">Дата последнего изменения <?=$note->date_change?></span><br>
+            <a class="btn-default view" href="notes/<?=$note->id?>">Просмотреть</a>
+        </div>
+    <?php } ?>
     </div>
-<?php } ?>
 </div>
